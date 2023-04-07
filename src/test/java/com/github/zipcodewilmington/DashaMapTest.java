@@ -18,10 +18,6 @@ public class DashaMapTest {
     }
 
     @Test
-    public void name(){
-
-    }
-    @Test
     public void setTest(){
         String key = "key";
         String value = "value";
@@ -37,7 +33,7 @@ public class DashaMapTest {
     public void deleteTest(){
         String key = "key";
         String value = "value";
-        long expected = 1;
+        long expected = 0;
 
         map.delete(key);
         long actual = map.bucketSize("k");

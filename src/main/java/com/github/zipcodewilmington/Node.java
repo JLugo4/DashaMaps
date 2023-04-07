@@ -2,13 +2,10 @@ package com.github.zipcodewilmington;
 
 public class Node<T> {
     String value;
-
-
-
     String key;
     Node next;
 
-    public Node(String data, String key){
+    public Node(String key, String data){
         this.value = data;
         this.key = key;
         next = null;
