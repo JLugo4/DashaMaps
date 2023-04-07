@@ -1,26 +1,38 @@
 package com.github.zipcodewilmington;
 
 public class Node<T> {
-    String data;
-    Node<String> next;
+    String value;
 
-    public Node(String data){
-        this.data = data;
+
+
+    String key;
+    Node next;
+
+    public Node(String data, String key){
+        this.value = data;
+        this.key = key;
         next = null;
     }
     public String getData(){
-        return data;
+        return value;
     }
 
     public void setData(String data){
-        this.data = data;
+        this.value = data;
     }
 
-    public Node<String> getNext(){
+    public Node getNext(){
         return next;
     }
 
     public void setNext(Node node){
         this.next = node;
+    }
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 }

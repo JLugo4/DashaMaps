@@ -6,6 +6,9 @@ package com.github.zipcodewilmington;
  * @date 10/21/19 9:05 AM
  */
 public class DashaMap implements HashMapX {
+
+    Node[] arr = new Node[26];
+
     @Override
     public void set(String key, String value) {
 
@@ -32,7 +35,7 @@ public class DashaMap implements HashMapX {
     }
 
     @Override
-    public boolean bucketSize(String key) {
-        return false;
+    public long bucketSize(String key) {
+        return 0;
     }
 }
